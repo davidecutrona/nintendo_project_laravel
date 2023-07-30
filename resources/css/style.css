@@ -1,0 +1,178 @@
+/*Navbar*/
+.link-colors{
+color: yellowgreen;
+background-color: darkblue;
+border-radius: 20vw;
+font-family: 'Nabla', cursive;
+}
+
+.link-colors-drop{
+color: yellowgreen;
+background-color: darkblue;
+border-radius: 15vw;
+width: 97%;
+font-family: 'Nabla', cursive;
+}
+
+.link-colors:hover,
+.link-colors-drop:hover {
+color: yellowgreen;
+background-color: darkblue;
+border-radius: 20vw;
+}
+
+.link-colors:active,
+.link-colors-drop:active {
+color: yellowgreen;
+background-color: darkblue;
+border-radius: 20vw;
+}
+
+.link-colors:focus,
+.link-colors-drop:focus {
+color: yellowgreen;
+background-color: darkblue;
+border-radius: 20vw;
+}
+
+.drop-down{
+border: none;
+}
+
+#logo{
+width: 60%;
+}
+
+@media (max-width: 900px) {
+#logo {
+width: 30%;
+}
+}
+/*Fine Navbar*/
+
+/*Header Homepage*/
+.homepage{
+background-image: url(/public/media/sfondohomepage.jpg);
+height: 80vh;
+background-size: cover;
+background-position: center;
+}
+
+.titolo{
+font-family: 'Nabla', cursive;
+font-size: 380%;
+}
+/*Fine Header Homepage*/
+
+/*Header Carica Videogioco*/
+.load-game{
+background-image: url(/public/media/sfondocreate.jpg);
+height: 70vh;
+background-size: cover;
+background-position: center;
+}
+/*Fine Header Carica Videogioco*/
+
+/*Section Form Carica Videogioco*/
+.loading{
+background-color: darkblue;
+border: 6px solid red;
+box-shadow: 5px 5px 5px 5px yellow;
+}
+
+.loading-write{
+font-family: 'Tourney', cursive;
+}
+/*Section Fine Form Carica Videogioco*/
+
+/*Indice Videogiochi*/
+.custom-img{
+object-fit: cover;
+height: 100%;
+}
+
+.card-custom{
+background-color: darkblue;
+border: 3px solid red;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.custom-title{
+font-family: 'Tourney', cursive;
+}
+
+.background-index{
+background-image: url(/public/media/sfondoindex.jpg);
+height: 80vh;
+background-size: cover;
+background-position: center;
+}
+/*Fine Indice Videogiochi*/
+
+/*Dettaglio Videogioco*/
+.border-card{
+    border: 4px solid red;
+    box-shadow: 5px 5px 5px 5px darkblue;
+}
+/*Fine Dettaglio Videogioco*/
+
+/*Modifica Videogioco*/
+.background-modifier{
+    background-image: url(/public/media/sfondoedit.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*Fine Modifica Videogioco*/
+
+/*Bottone Elimina*/
+.custom-button{
+    width: 100%;
+}
+/*Fine Bottone Elimina*/
+
+/*Registrazione*/
+.background-register{
+    background-image: url(/public/media/sfondoregistrati.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/*Fine Registrazione*/
+
+/*Invio Mail*/
+.background-contact{
+    background-image: url(/public/media/sfondocontattaci.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+}
+
+.w-input{
+    width: 49%;
+    margin-left: -2vw;
+}
+
+.blur-form {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0); /* Colore di sfondo trasparente con opacità 50% */
+    backdrop-filter: blur(8px);
+}
+
+.blur-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo trasparente con opacità 50% */
+    backdrop-filter: blur(8px); /* Regola il valore per cambiare l'intensità dello sfocatura */
+    z-index: -1;
+}
+/*Fine Invio Mail*/
+
+

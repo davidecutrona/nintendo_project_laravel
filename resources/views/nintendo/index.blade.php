@@ -22,18 +22,18 @@
 <!--Card Mostra Videogiochi-->
 <div class="container-fluid">
     <div class="row justify-content-around">
-        @foreach ($videogames as $videogame)
+        @foreach ($nintendos as $nintendo)
             <div class="col-12 col-md-4 col-lg-2 my-5">
                 <div class="card h-100 w-100 card-custom">
-                    <img src="{{ Storage::url($videogame->img) }}" class="card-img-top img-fluid custom-img rounded-2"
+                    <img src="{{ Storage::url($nintendo->img) }}" class="card-img-top img-fluid custom-img rounded-2"
                         alt="...">
                     <div class="card-body">
-                        <h5 class="card-title custom-title text-warning text-center">{{ $videogame->title }}</h5>
-                        <a href="{{ route('videogame_show', compact('videogame')) }}"
+                        <h5 class="card-title custom-title text-warning text-center">{{ $nintendo->title }}</h5>
+                        <a href="{{ route('nintendo_show', compact('nintendo')) }}"
                             class="btn btn-outline-success d-flex justify-content-center my-2">Vedi Dettaglio</a>
-                        <a href="{{ route('videogame_edit', compact('videogame')) }}"
+                        <a href="{{ route('nintendo_edit', compact('nintendo')) }}"
                             class="btn btn-outline-warning d-flex justify-content-center">Modifica Videogioco</a>
-                        <form action="{{ route('videogame_delete', compact('videogame')) }}" method="POST"
+                        <form action="{{ route('nintendo_delete', compact('nintendo')) }}" method="POST"
                             class="d-flex justify-content-center">
                             @csrf
                             @method('delete')

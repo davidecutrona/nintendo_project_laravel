@@ -17,43 +17,43 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
-            <form action="{{ route('videogame_store') }}" method="POST" enctype="multipart/form-data"
+            <form action="{{ route('nintendo_store') }}" method="POST" enctype="multipart/form-data"
                 class="loading rounded-5 my-5 mx-5 text-center">
                 @csrf
                 <div class="mb-3 p-3">
-                    <label for="videogameTitle" class="form-label text-warning loading-write">Titolo</label>
-                    <input type="text" class="form-control bg-warning text-center" id="videogameTitle" name="title"
+                    <label for="nintendoTitle" class="form-label text-warning loading-write">Titolo</label>
+                    <input type="text" class="form-control bg-warning text-center" id="nintendoTitle" name="title"
                         value="{{ old('title') }}">
                     @error('title')
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="mb-3 p-3">
-                    <label for="videogameGender" class="form-label text-warning loading-write">Genere</label>
-                    <input type="text" class="form-control bg-warning text-center" id="videogameGender" name="gender"
+                    <label for="nintendoGender" class="form-label text-warning loading-write">Genere</label>
+                    <input type="text" class="form-control bg-warning text-center" id="nintendoGender" name="gender"
                         value="{{ old('gender') }}">
                     @error('gender')
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="mb-3 p-3">
-                    <label for="videogameDescription" class="form-label text-warning loading-write">Descrizione</label>
-                    <textarea name="description" id="videogameDescription" cols="30" rows="10" class="form-control bg-warning text-center">{{ old('description') }}</textarea>
+                    <label for="nintendoDescription" class="form-label text-warning loading-write">Descrizione</label>
+                    <textarea name="description" id="nintendoDescription" cols="30" rows="10" class="form-control bg-warning text-center">{{ old('description') }}</textarea>
                     @error('description')
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="mb-3 p-3">
-                    <label for="videogameImg" class="form-label text-warning loading-write">Carica Immagine</label>
-                    <input type="file" class="form-control bg-warning loading-write text-center" id="videogameImg" name="img"
+                    <label for="nintendoImg" class="form-label text-warning loading-write">Carica Immagine</label>
+                    <input type="file" class="form-control bg-warning loading-write text-center" id="nintendoImg" name="img"
                         value="{{ old('img') }}">
                     @error('img')
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="mb-3 p-3">
-                    <label for="videogamePrice" class="form-label text-warning loading-write">Prezzo</label>
-                    <input type="number" class="form-control bg-warning text-center" id="videogamePrice" name="price"
+                    <label for="nintendoPrice" class="form-label text-warning loading-write">Prezzo</label>
+                    <input type="number" class="form-control bg-warning text-center" id="nintendoPrice" name="price"
                         value="{{ old('price') }}">
                     @error('price')
                         <p class="text-danger">{{ $message }}</p>

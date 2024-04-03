@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\VideogameRequest;
+use App\Http\Requests\NintendoRequest;
 use App\Mail\ContactMail;
-use App\Models\Videogame;
+use App\Models\Nintendo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-class VideogameController extends Controller
+class NintendoController extends Controller
 {   
     /*Middleware*/
     public function __construct(){
@@ -24,8 +24,8 @@ class VideogameController extends Controller
      */
     public function index()
     {
-        $videogames = Videogame::all();
-        return view('videogame.index', compact('videogames'));
+        $nintendos = Nintendo::all();
+        return view('nintendo.index', compact('nintendos'));
     }
 
     /**
@@ -33,15 +33,15 @@ class VideogameController extends Controller
      */
     public function create()
     {
-        return view('videogame.create');
+        return view('nintendo.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(VideogameRequest $request)
+    public function store(NintendoRequest $request)
     {
-        $videogame = Videogame::create([
+        $nintendo = Nintendo::create([
             'title' => $request->title,
             'gender' => $request->gender,
             'description' => $request->description,
@@ -49,51 +49,51 @@ class VideogameController extends Controller
             'price' => $request->price,
         ]);
 
-        return redirect(route('videogame_create'))->with('status', 'Videogioco correttamente caricato');
+        return redirect(route('nintendo_create'))->with('status', 'Videogioco correttamente caricato');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Videogame $videogame)
+    public function show(Nintendo $nintendo)
     {
-        return view('videogame.show', compact('videogame'));
+        return view('nintendo.show', compact('nintendo'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Videogame $videogame)
+    public function edit(Nintendo $nintendo)
     {
-        return view('videogame.edit', compact('videogame'));
+        return view('nintendo.edit', compact('nintendo'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(VideogameRequest $request, Videogame $videogame,)
+    public function update(NintendoRequest $request, Nintendo $nintendo,)
     {
-        $videogame->update([
-            $videogame->title = $request->title,
-            $videogame->gender = $request->gender,
-            $videogame->description = $request->description,
-            $videogame->price = $request->price,
+        $nintendo->update([
+            $nintendo->title = $request->title,
+            $nintendo->gender = $request->gender,
+            $nintendo->description = $request->description,
+            $nintendo->price = $request->price,
         ]);
         if($request->img){
-            $videogame->update([
-                $videogame->img = $request->file('img')->store('public/media')
+            $nintendo->update([
+                $nintendo->img = $request->file('img')->store('public/media')
             ]);
         }
-        return redirect(route('videogame_edit', compact('videogame')))->with('status', 'Videogioco correttamente modificato');
+        return redirect(route('nintendo_edit', compact('nintendo')))->with('status', 'Videogioco correttamente modificato');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Videogame $videogame)
+    public function destroy(Nintendo $nintendo)
     {
-        $videogame->delete();
-        return redirect(route('videogames', compact('videogame')))->with('status', 'Videogioco correttamente eliminato');
+        $nintendo->delete();
+        return redirect(route('nintendos', compact('nintendo')))->with('status', 'Videogioco correttamente eliminato');
     }
 
     /*Funzione Invio Mail*/

@@ -13,10 +13,10 @@
                     <a class="nav-link link-colors p-3 m-3 text-center" aria-current="page" href="{{route('homepage')}}">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-colors p-3 m-3 text-center" href="{{route('videogame_create')}}">Carica Videogioco</a>
+                    <a class="nav-link link-colors p-3 m-3 text-center" href="{{route('nintendo_create')}}">Carica Videogioco</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-colors p-3 m-3 text-center" href="{{route('videogames')}}">Mostra Videogiochi</a>
+                    <a class="nav-link link-colors p-3 m-3 text-center" href="{{route('nintendos')}}">Mostra Videogiochi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-colors p-3 m-3 text-center" href="{{route('contact.us')}}">Contattaci</a>

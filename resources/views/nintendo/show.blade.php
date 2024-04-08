@@ -1,9 +1,9 @@
-<x-layout title="Dettaglio Videogioco" />
-<!--Titolo Dettaglio Gioco-->
+<x-layout title="Dettaglio Nintendo" />
+<!--Titolo Dettaglio Nintendo-->
 <h1 class="titolo text-center my-5">Dettaglio Videogioco: {{ $nintendo->title }}</h1>
-<!--Fine Titolo Dettaglio Gioco-->
+<!--Fine Titolo Dettaglio Nintendo-->
 
-<!--Dettaglio Videogioco-->
+<!--Dettaglio Nintendo-->
 <section class="container-fluid my-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-7">
@@ -20,4 +20,4 @@
         </div>
     </div>
 </section>
-<!--Fine Dettaglio Videogioco-->
+<!--Fine Dettaglio Nintendo-->

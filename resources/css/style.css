@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+
+
 /*Navbar*/
 .link-colors{
 color: yellowgreen;
@@ -50,6 +60,7 @@ width: 30%;
 }
 /*Fine Navbar*/
 
+
 /*Header Homepage*/
 .homepage{
 background-image: url(/public/media/sfondohomepage.jpg);
@@ -64,16 +75,18 @@ font-size: 380%;
 }
 /*Fine Header Homepage*/
 
-/*Header Carica Videogioco*/
+
+/*Header Carica Nintendo*/
 .load-game{
 background-image: url(/public/media/sfondocreate.jpg);
 height: 70vh;
 background-size: cover;
 background-position: center;
 }
-/*Fine Header Carica Videogioco*/
+/*Fine Header Carica Nintendo*/
 
-/*Section Form Carica Videogioco*/
+
+/*Section Form Carica Nintendo*/
 .loading{
 background-color: darkblue;
 border: 6px solid red;
@@ -83,9 +96,10 @@ box-shadow: 5px 5px 5px 5px yellow;
 .loading-write{
 font-family: 'Tourney', cursive;
 }
-/*Section Fine Form Carica Videogioco*/
+/*Section Fine Form Carica Nintendo*/
 
-/*Indice Videogiochi*/
+
+/*Indice Nintendo*/
 .custom-img{
 object-fit: cover;
 height: 100%;
@@ -110,29 +124,33 @@ height: 80vh;
 background-size: cover;
 background-position: center;
 }
-/*Fine Indice Videogiochi*/
+/*Fine Indice Nintendo*/
 
-/*Dettaglio Videogioco*/
+
+/*Dettaglio Nintendo*/
 .border-card{
     border: 4px solid red;
     box-shadow: 5px 5px 5px 5px darkblue;
 }
 /*Fine Dettaglio Videogioco*/
 
-/*Modifica Videogioco*/
+
+/*Modifica Nintendo*/
 .background-modifier{
     background-image: url(/public/media/sfondoedit.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
-/*Fine Modifica Videogioco*/
+/*Fine Modifica Nintendo*/
+
 
 /*Bottone Elimina*/
 .custom-button{
     width: 100%;
 }
 /*Fine Bottone Elimina*/
+
 
 /*Registrazione*/
 .background-register{
@@ -142,6 +160,7 @@ background-position: center;
     height: 100vh;
 }
 /*Fine Registrazione*/
+
 
 /*Invio Mail*/
 .background-contact{
@@ -158,7 +177,7 @@ background-position: center;
 
 .blur-form {
     position: relative;
-    background-color: rgba(0, 0, 0, 0); /* Colore di sfondo trasparente con opacità 50% */
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(8px);
 }
 
@@ -169,10 +188,163 @@ background-position: center;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo trasparente con opacità 50% */
-    backdrop-filter: blur(8px); /* Regola il valore per cambiare l'intensità dello sfocatura */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
     z-index: -1;
 }
 /*Fine Invio Mail*/
 
 
+/*Footer*/
+footer {
+    padding: 0;
+    margin: 0;
+    height: 25vh;
+    background-image: url(/public/media/toad.jpg);
+    background-position: center;
+    background-size: 1200px auto;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+footer * {
+    position: relative;
+    z-index: 2;
+}
+
+.container-fluid {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container, .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Overlay*/
+.overlay-div {
+    position: absolute;
+    top: 90px;
+    left: 40%;
+    transform: translateX(-43%);
+    width: 54%;
+    height: 2px;
+    background-color: white;
+    z-index: 10;
+}
+/*Fine Overlay*/
+
+/*Media Query Footer*/
+@media (max-width: 480px) {
+    footer {
+        background-size: 100%;
+    }
+
+    .overlay-div {
+        position: absolute;
+        top: 50px;
+        left: 42%;
+        transform: translateX(-45%);
+        width: 62%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    footer {
+        background-size: 100%;
+    }
+    .overlay-div {
+        position: absolute;
+        top: 50px;
+        left: 42%;
+        transform: translateX(-45%);
+        width: 60%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        background-size: 100%;
+        margin: 0 0 -30% 0;
+        padding: 30px 0;
+        min-height: 60vh;
+    }
+    .overlay-div {
+        position: absolute;
+        top: 20vh;
+        left: 42%;
+        transform: translateX(-45%);
+        width: 62%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    footer {
+        background-size: 100%;
+        padding: 50px 0;
+        min-height: 120px;
+    }
+    .overlay-div {
+        position: absolute;
+        top: 5vh;
+        left: 42%;
+        transform: translateX(-45%);
+        width: 62%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    footer {
+        background-size: 100%;
+        margin: -1vh;
+    }
+    .overlay-div {
+        position: absolute;
+        top: 50px;
+        left: 41%;
+        transform: translateX(-45%);
+        width: 57%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1920px) {
+    footer {
+        background-size: 100%;
+    }
+}
+/*Fine Media Query Footer*/
+
+footer .fab, .footer-text {
+    color: white;
+}
+/*Fine Footer*/

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid container-fluid-footer">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top border-danger">
         <div class="overlay-div"></div>
         <div class="col-md-4 col-6 d-flex align-items-center">

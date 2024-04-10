@@ -49,15 +49,35 @@ border-radius: 20vw;
 border: none;
 }
 
-#logo{
-width: 60%;
+#button-toggler {
+    color: darkblue;
 }
 
-@media (max-width: 900px) {
-#logo {
-width: 30%;
+/*Logo*/
+#logo{
+color: darkblue;
+width: 50%;
 }
+
+@media (max-width: 767px) {
+    #logo{
+        width: 27%;
+        }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo{
+        width: 30%;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo{
+        width: 90%;
+        }
+}
+/*Fine Logo*/
+
 /*Fine Navbar*/
 
 
@@ -198,7 +218,7 @@ background-position: center;
 /*Footer*/
 footer {
     padding: 0;
-    margin: 0;
+    margin: -12px;
     height: 25vh;
     background-image: url(/public/media/toad.jpg);
     background-position: center;
@@ -223,17 +243,10 @@ footer * {
     z-index: 2;
 }
 
-.container-fluid {
+.container-fluid-footer {
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-}
-
-.container, .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /*Overlay*/
@@ -286,13 +299,13 @@ footer * {
 @media (min-width: 768px) and (max-width: 991px) {
     footer {
         background-size: 100%;
-        margin: 0 0 -30% 0;
+        margin: -12px;
         padding: 30px 0;
-        min-height: 60vh;
+        min-height: 36vh;
     }
     .overlay-div {
         position: absolute;
-        top: 20vh;
+        top: 10vh;
         left: 42%;
         transform: translateX(-45%);
         width: 62%;
@@ -306,14 +319,14 @@ footer * {
     footer {
         background-size: 100%;
         padding: 50px 0;
-        min-height: 120px;
+        min-height: 35vh;
     }
     .overlay-div {
         position: absolute;
-        top: 5vh;
+        top: 7vh;
         left: 42%;
         transform: translateX(-45%);
-        width: 62%;
+        width: 56%;
         height: 2px;
         background-color: white;
         z-index: 10;
@@ -323,7 +336,7 @@ footer * {
 @media (min-width: 1200px) and (max-width: 1919px) {
     footer {
         background-size: 100%;
-        margin: -1vh;
+        margin: -12px;
     }
     .overlay-div {
         position: absolute;
@@ -340,6 +353,16 @@ footer * {
 @media (min-width: 1920px) {
     footer {
         background-size: 100%;
+    }
+    .overlay-div {
+        position: absolute;
+        top: 50px;
+        left: 41%;
+        transform: translateX(-45%);
+        width: 55%;
+        height: 2px;
+        background-color: white;
+        z-index: 10;
     }
 }
 /*Fine Media Query Footer*/

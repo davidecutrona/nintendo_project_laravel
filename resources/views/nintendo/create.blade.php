@@ -9,7 +9,7 @@
 </header>
 <!--Fine Header Carica Videogioco-->
 @if (session('status'))
-    <div class="alert alert-success">
+    <div class="alert alert-success mt-3 text-center bg-success text-white">
         {{ session('status') }}
     </div>
 @endif
@@ -70,3 +70,4 @@
     </div>
 </section>
 <!--Fine Form Carica Videogioco-->
+

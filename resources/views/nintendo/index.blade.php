@@ -8,11 +8,11 @@
     </div>
 </header>
 <!--Fine Header Mostra Videogiochi-->
-<div class="container my-5">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
             @if (session('status'))
-                <div class="alert alert-success">
+                <div class="alert alert-success mt-3 text-center bg-danger text-white">
                     {{ session('status') }}
                 </div>
             @endif
@@ -20,10 +20,10 @@
     </div>
 </div>
 <!--Card Mostra Videogiochi-->
-<div class="container-fluid">
+<div class="container-fluid py-5 my-5">
     <div class="row justify-content-around">
         @foreach ($nintendos as $nintendo)
-            <div class="col-12 col-md-4 col-lg-2 my-5">
+            <div class="col-10 col-md-4 col-lg-3 py-5">
                 <div class="card h-100 w-100 card-custom">
                     <img src="{{ Storage::url($nintendo->img) }}" class="card-img-top img-fluid custom-img rounded-2"
                         alt="...">
@@ -46,3 +46,7 @@
     </div>
 </div>
 <!--Fine Card Mostra Videogiochi-->
+
+<!--Footer-->
+<x-footer />
+<!--Fine Footer-->

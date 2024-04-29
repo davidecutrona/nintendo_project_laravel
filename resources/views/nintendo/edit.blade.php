@@ -1,15 +1,15 @@
 <x-layout title="Modifica Videogioco" />
 
 @if (session('status'))
-    <div class="alert alert-success">
+    <div class="alert alert-success text-center bg-success text-white custom-alert">
         {{ session('status') }}
     </div>
 @endif
 <!--Form Carica Videogioco-->
-<section class="container-fluid background-modifier">
+<section class="container-fluid background-modifier py-5">
     <div class="row">
-        <h1 class="titolo text-center my-5">Modifica Videogioco: {{ $nintendo->title }}</h1>
-        <div class="col-12 col-md-6 col-lg-6 my-5 d-flex justify-content-center">
+        <h1 class="titolo text-center">Modifica Videogioco: {{ $nintendo->title }}</h1>
+        <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
             
         </div>
         <div class="col-12 col-md-6 col-lg-6">

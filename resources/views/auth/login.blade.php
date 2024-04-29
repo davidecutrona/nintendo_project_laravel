@@ -1,6 +1,6 @@
 <x-layout title="Loggati" />
 
-<div class="container-fluid bg-danger">
+<div class="container-fluid bg-danger custom-login pb-5">
     <div class="row justify-content-center">
         <h1 class="titolo text-center my-5">Accedi al nostro portale</h1>
         <div class="col-12 col-md-8 col-lg-6">

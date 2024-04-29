@@ -179,7 +179,57 @@ background-position: center;
     background-size: cover;
     height: 100vh;
 }
+
+@media (max-width: 480px) {
+    .background-register {
+        height: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .background-register {
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .background-register {
+        height: 1040px;
+    }
+}
+
 /*Fine Registrazione*/
+
+
+/*Accedi*/
+
+.custom-login {
+    height: 100%;
+}
+@media (max-width: 480px) {
+    .custom-login {
+        height: 500px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .custom-login {
+        height: 450px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .custom-login {
+        height: 380px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px){
+    .custom-login {
+        height: 400px;
+    }
+}
+/*Fine Accedi*/
 
 
 /*Invio Mail*/
@@ -371,3 +421,9 @@ footer .fab, .footer-text {
     color: white;
 }
 /*Fine Footer*/
+
+/*Edit Alert*/
+.custom-alert{
+    margin-bottom: 0;
+}
+/*Fine Edit Alert*/

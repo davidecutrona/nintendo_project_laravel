@@ -4,9 +4,9 @@
 <!--Fine Titolo Dettaglio Nintendo-->
 
 <!--Dettaglio Nintendo-->
-<section class="container-fluid my-5">
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-7">
+<section class="container-fluid my-5 py-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-11 col-md-6 col-lg-5">
             <div class="card mb-3 border-card rounded-3">
                 <img src="{{Storage::url($nintendo->img)}}" class="card-img-top" alt="...">
                 <div class="card-body text-center bg-dark text-light">
@@ -21,3 +21,7 @@
     </div>
 </section>
 <!--Fine Dettaglio Nintendo-->
+
+<!--Footer-->
+<x-footer />
+<!--Fine Footer-->

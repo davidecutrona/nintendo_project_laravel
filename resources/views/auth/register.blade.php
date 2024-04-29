@@ -2,7 +2,7 @@
 
 <div class="container-fluid background-register">
     <div class="row justify-content-center">
-        <h1 class="titolo text-center my-5">Registrati sul nostro portale</h1>
+        <h1 class="titolo text-center my-3">Registrati sul nostro portale</h1>
         <div class="col-12 col-md-8 col-lg-6">
             <form action="{{ route('register') }}" method="POST" class="loading rounded-5 my-5 mx-5 text-center">
                 @csrf

@@ -427,3 +427,57 @@ footer .fab, .footer-text {
     margin-bottom: 0;
 }
 /*Fine Edit Alert*/
+
+
+/*Carousel*/
+.carousel-item img {
+    height: 60vh;
+    width: 80%;
+}
+
+.carousel-item-fontcustom {
+    font-family: 'Nabla', cursive;
+}
+
+@media (max-width: 480px) {
+    .carousel-item img {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .carousel-item img {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-item img {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-item img {
+        height: 33vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-item img {
+        height: 55vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+.transparent-blur {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+}
+/*Fine Carousel*/

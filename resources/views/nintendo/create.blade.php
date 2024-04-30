@@ -8,11 +8,23 @@
     </div>
 </header>
 <!--Fine Header Carica Videogioco-->
-@if (session('status'))
-    <div class="alert alert-success mt-3 text-center bg-success text-white">
-        {{ session('status') }}
+
+
+<!--Alert-->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            @if (session('status'))
+                <div class="alert alert-success mt-3 text-center bg-success text-white">
+                    {{ session('status') }}
+                </div>
+            @endif
+        </div>
     </div>
-@endif
+</div>
+<!--Fine Alert-->
+
+
 <!--Form Carica Videogioco-->
 <section class="container-fluid">
     <div class="row">

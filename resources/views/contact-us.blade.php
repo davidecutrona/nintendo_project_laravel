@@ -1,16 +1,20 @@
 <x-layout title="Contattaci" />
+
+
 <!--Form Invio Mail-->
 <div class="container-fluid background-contact">
     <div class="row justify-content-center">
         <h1 class="titolo text-center my-5">Compila il nostro form</h1>
-        <div class="col-12 col-md-8 col-lg-6 my-5 d-flex justify-content-center">
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    @if (session('status'))
+                        <div class="alert alert-success text-center">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                 </div>
-            @endif
-        </div>
-        <div class="col-md-8 col-lg-6">
+            </div>
         </div>
         <div class="col-12 col-md-8 col-lg-6 my-5 text-center text-warning w-input blur-form rounded-3">
             <form method="POST" action="{{ route('contact.submit') }}">

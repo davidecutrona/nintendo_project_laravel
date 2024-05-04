@@ -18,11 +18,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-colors p-3 m-3 text-center" href="{{ route('nintendo_create') }}">Carica
-                        Videogioco</a>
+                        Contenuto</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-colors p-3 m-3 text-center" href="{{ route('nintendos') }}">Mostra
-                        Videogiochi</a>
+                        Contenuto</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-colors p-3 m-3 text-center" href="{{ route('contact.us') }}">Contattaci</a>

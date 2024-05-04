@@ -1,13 +1,15 @@
-<x-layout title="Carica Videogioco" />
-<!--Header Carica Videogioco-->
+<x-layout title="Carica Contenuto" />
+
+
+<!--Header Carica Contenuto-->
 <header class="container-fluid load-game d-flex justify-content-start">
     <div class="row">
         <div class="col-12 col-md-12 d-flex align-items-center">
-            <h1 class="titolo">Carica Videogioco</h1>
+            <h1 class="titolo">Carica Contenuto</h1>
         </div>
     </div>
 </header>
-<!--Fine Header Carica Videogioco-->
+<!--Fine Header Carica Contenuto-->
 
 
 <!--Alert-->
@@ -25,7 +27,7 @@
 <!--Fine Alert-->
 
 
-<!--Form Carica Videogioco-->
+<!--Form Carica Contenuto-->
 <section class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
@@ -81,5 +83,4 @@
         </div>
     </div>
 </section>
-<!--Fine Form Carica Videogioco-->
-
+<!--Fine Form Carica Contenuto-->

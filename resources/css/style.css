@@ -197,12 +197,10 @@ background-position: center;
         height: 1040px;
     }
 }
-
 /*Fine Registrazione*/
 
 
 /*Accedi*/
-
 .custom-login {
     height: 100%;
 }
@@ -422,6 +420,7 @@ footer .fab, .footer-text {
 }
 /*Fine Footer*/
 
+
 /*Edit Alert*/
 .custom-alert{
     margin-bottom: 0;
@@ -481,3 +480,61 @@ footer .fab, .footer-text {
     border: none;
 }
 /*Fine Carousel*/
+
+
+/*Swiper 1*/
+.swiper {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .swiper {
+        width: 430px;
+        height: 430px;
+        left: 50%;
+        top: 50%;
+        margin-left: -200px;
+        margin-top: -200px;
+    }
+}
+/*Fine Swiper 1*/
+
+/*Swiper 2*/
+.swiper-2 {
+    width: 240px;
+    height: 350px;
+}
+
+.swiper-2 .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (min-width: 900px) {
+    .swiper-2 {
+        width: 370px;
+        height: 550px;
+        margin-bottom: 200px;
+    }
+}
+/*Fine Swiper 2*/

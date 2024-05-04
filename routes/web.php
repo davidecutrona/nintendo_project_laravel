@@ -16,18 +16,17 @@ use Illuminate\Support\Facades\Route;
 /*Rotta Homepage*/
 Route::get('/', [NintendoController::class, 'home']
 )->name('homepage');
-/*Rotta Carica Nintendo*/
+/*Rotta Carica Contenuto*/
 Route::get('/nintendo/create', [NintendoController::class, 'create'])->name('nintendo_create');
 Route::post('/nintendo/store', [NintendoController::class, 'store'])->name('nintendo_store');
-/*Rotta Index Nintendo*/
+/*Rotta Index Contenuto*/
 Route::get('/nintendo', [NintendoController::class, 'index'])->name('nintendos');
-/*Rotta Dettaglio Nintendo*/
+/*Rotta Dettaglio Contenuto*/
 Route::get('/nintendo/dettaglio/{nintendo}', [NintendoController::class, 'show'])->name('nintendo_show');
-/*Rotta Modifica Nintendo*/
+/*Rotta Modifica Contenuto*/
 Route::get('/nintendo/modifica/{nintendo}', [NintendoController::class, 'edit'])->name('nintendo_edit');
-/*Rotta Aggiornamento Nintendo*/
 Route::put('/nintendo/aggiornamento/{nintendo}', [NintendoController::class, 'update'])->name('nintendo_update');
-/*Rotta Eliminazione Nintendo*/
+/*Rotta Eliminazione Contenuto*/
 Route::delete('/nintendo/eliminazione/{nintendo}', [NintendoController::class, 'destroy'])->name('nintendo_delete');
 /*Rotta Invio Mail*/
 Route::get('/contattaci', [NintendoController::class, 'contact'])->name('contact.us');

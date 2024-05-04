@@ -1,8 +1,8 @@
-<x-layout title="Modifica Videogioco" />
+<x-layout title="Modifica Contenuto" />
 
 <div class="background-modifier">
     
-    
+
     <!--Alert-->
     <div class="container">
         <div class="row justify-content-center">
@@ -18,10 +18,10 @@
     <!--Fine Alert-->
 
 
-    <!--Form Carica Videogioco-->
+    <!--Form Carica Contenuto-->
     <section class="container-fluid py-5">
         <div class="row">
-            <h1 class="titolo text-center">Modifica Videogioco: {{ $nintendo->title }}</h1>
+            <h1 class="titolo text-center">Modifica Contenuto: {{ $nintendo->title }}</h1>
             <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                 
             </div>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </section>
-    <!--Fine Form Carica Videogioco-->
+    <!--Fine Form Carica Contenuto-->
+
+    
 </div>
-
-
